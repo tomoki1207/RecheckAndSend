@@ -9,7 +9,7 @@ function onLoad() {
 function CASSetting()
 {
 	this.accountManager = Components.classes["@mozilla.org/messenger/account-manager;1"].
-							getService(Components.interfaces.nsIMsgAccountManager);	
+							getService(Components.interfaces.nsIMsgAccountManager);
 	this.elementIDs = [
 		"CSUseDefault",
 		"CSConfirm",
@@ -59,7 +59,7 @@ function CASSetting()
 		"CSRecipNameAlert",
 		"CSRecipReplaceEvent"
 	];
-	
+
 	try {
     	this.sAccountManagerDataSource = Components.classes["@mozilla.org/rdf/datasource;1?name=msgaccountmanager"].getService(Components.interfaces.nsIRDFDataSource);
     	this.sRDF = Components.classes['@mozilla.org/rdf/rdf-service;1'].getService(Components.interfaces.nsIRDFService);
@@ -76,7 +76,7 @@ CASSetting.prototype.init = function() {
 	this.fillIdentityListPopup(popup);
 	this.setInitialIdentity();
 	this.applyPrefsToPanes();
-	
+
 	this.switchNoteForAttachQuery();
 	this.switchNoteForWordQuery();
 }
@@ -121,7 +121,7 @@ CASSetting.prototype.applyPrefsToPanes = function(prefPrefix)
 		var elementID = this.elementIDs[i];
 		var element = document.getElementById(elementID);
 		if (!element) break;
-		var prefStr = prefix ? prefix+element.getAttribute("prefstring") : element.getAttribute("prefstring")		
+		var prefStr = prefix ? prefix+element.getAttribute("prefstring") : element.getAttribute("prefstring")
 		var eltType = element.localName;
 		if (eltType == "radiogroup") {
 			var index = nsPreferences.getIntPref(prefStr, null);
@@ -244,7 +244,7 @@ CASSetting.prototype.setOptionDisabled = function(target)
 			} else {
 				document.getElementById("CSAbLaterLabel").removeAttribute("disabled");
 			}
-			break;	
+			break;
 		case "CSRecipNameMode":
 		/*
 			if (target.value != 2) {
@@ -307,8 +307,8 @@ CASSetting.prototype.clearIdentityListPopup = function(popup)
 
 CASSetting.prototype.queryISupportsArray = function(supportsArray, iid) {
     var result = new Array;
-    for (var i=0; i<supportsArray.Count(); i++) {
-      result[i] = supportsArray.QueryElementAt(i, iid);
+    for (var i=0; i<supportsArray.length; i++) {
+      result[i] = supportsArray.queryElementAt(i, iid);
     }
     return result;
 }
@@ -344,7 +344,7 @@ CASSetting.prototype.compareAccountSortOrder = function(account1, account2)
     return -1;
   else if (sortValue1 > sortValue2)
     return 1;
-  else 
+  else
     return 0;
 }
 
@@ -375,7 +375,7 @@ CASSetting.prototype.onChangeId = function(target)
 	} else {
 		document.getElementById("CSUseDefault").removeAttribute("disabled");
 	}
-	
+
 	this.initPanesForId();
 }
 
@@ -387,7 +387,7 @@ CASSetting.prototype.onPopupshowingForId = function()
 CASSetting.prototype.initPanesForId = function(skipPrefsLoad)
 {
 	if (!skipPrefsLoad) this.applyPrefsToPanes();
-	
+
 	var useDefault = document.getElementById("CSUseDefault").getAttribute("checked") == "true";
 	if (useDefault) {
 		document.getElementById("CSPanes").setAttribute("collapsed", "true");
