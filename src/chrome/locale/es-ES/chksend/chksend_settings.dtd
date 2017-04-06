@@ -1,0 +1,73 @@
+<!ENTITY chksend_set.title "Check and Send - Opciones">
+<!ENTITY chksend_set.identity "Identidad:">
+<!ENTITY chksend_set.default_identity "Por defecto">
+<!ENTITY chksend_set.use_default "Usar por defecto">
+<!ENTITY chksend_set.use_default_note "Esta identidad usa las opciones por defecto. Desmarque la casilla para poder establecer las opciones para esta identidad.">
+<!ENTITY chksend_set.gentab "General">
+<!ENTITY chksend_set.attachtab "Adjuntos">
+<!ENTITY chksend_set.wordstab "Palabras">
+<!ENTITY chksend_set.addrtab "Destinatarios">
+<!ENTITY chksend_set.reciptab "Nombres de los destinatarios">
+<!ENTITY chksend_set.confirm_caption "Confirmación de envío">
+<!ENTITY chksend_set.confirm_always "Confirmar antes de enviar un mensaje">
+<!ENTITY chksend_set.confirm_always_woerr "Sólo si no hay errores">
+<!ENTITY chksend_set.blank_check_recip_type_caption "Tipo de confirmación del destinatario">
+<!ENTITY chksend_set.blank_check_recip_type "Confirmar si el destinatario de los siguientes tipos están en blanco">
+<!ENTITY chksend_set.attach_caption "Comprobación de adjuntos">
+<!ENTITY chksend_set.check_attach1 "Confirmar si las siguientes palabras">
+<!ENTITY chksend_set.check_attach2 "en el mensaje sin adjuntos">
+<!ENTITY chksend_set.check_attach_menu1 "aparecen">
+<!ENTITY chksend_set.check_attach_menu2 "no aparecen">
+<!ENTITY chksend_set.attach_notice "* Use | como delimitador para introducir varias palabras">
+<!ENTITY chksend_set.regexp "Interpretar la consulta como una expresión regular">
+<!ENTITY chksend_set.case_sens "Tener en cuenta las mayúsculas">
+<!ENTITY chksend_set.ignore_quote "Ignorar la aparición en el texto citado">
+<!ENTITY chksend_set.check_target "Buscar en:">
+<!ENTITY chksend_set.check_target_subject "Asunto">
+<!ENTITY chksend_set.check_target_body "Cuerpo del mensaje">
+<!ENTITY chksend_set.check_attach_ext "Confirmar si los adjuntos tienen las siguientes extensiones">
+<!ENTITY chksend_set.check_attach_ext_note "* Use | como delimitador para introducir varias extensiones">
+<!ENTITY chksend_set.check_attach_cap "Comprobación de los tamaños de los adjuntos">
+<!ENTITY chksend_set.check_attach_size "Confirmar si los tamaños de los adjuntos exceden">
+<!ENTITY chksend_set.check_attach_size_kb "KB">
+<!ENTITY chksend_set.word_caption "Comprobación de palabras">
+<!ENTITY chksend_set.check_word1 "Confirmar si las siguientes palabras">
+<!ENTITY chksend_set.check_word2 "en el mensaje">
+<!ENTITY chksend_set.check_word_menu1 "aparecen">
+<!ENTITY chksend_set.check_word_menu2 "no aparecen">
+<!ENTITY chksend_set.word_notice "* Use | como delimitador para introducir varias palabras.">
+<!ENTITY chksend_set.regexp_word "Interpretar la consulta como una expresión regular">
+<!ENTITY chksend_set.case_sens_word "Tener en cuenta las mayúsculas">
+<!ENTITY chksend_set.ignore_quote_word "Ignorar la aparición en el texto citado">
+<!ENTITY chksend_set.check_subject_word "Comprobar también el asunto">
+<!ENTITY chksend_set.recip_common_caption "Común">
+<!ENTITY chksend_set.check_recip_type "Comprobar las direcciones de los siguientes campos:">
+<!ENTITY chksend_set.check_recip_type_to "Para">
+<!ENTITY chksend_set.check_recip_type_cc "Cc">
+<!ENTITY chksend_set.check_recip_type_bcc "Cco">
+<!ENTITY chksend_set.check_recip_type_reply "Responder-a">
+<!ENTITY chksend_set.check_recip_type_news "Gruopo de noticias">
+<!ENTITY chksend_set.check_recip_type_follow "Followup-To">
+<!ENTITY chksend_set.addr_check_with_word "Comprobar los destinatarios sólo si hay errores en la comprobación de adjuntos y palabras">
+<!ENTITY chksend_set.show_addr_any "Mostrar todos los destinatarios">
+<!ENTITY chksend_set.senderinfo_caption "Comprobar los destinatarios por la información del remitente">
+<!ENTITY chksend_set.senderinfo_confirm "Confirmar si el dominio del destinatario de diferente al del remitente">
+<!ENTITY chksend_set.domain_level1 "Buscar en">
+<!ENTITY chksend_set.domain_level2 "nivel del dominio (0 para el dominio completo)">
+<!ENTITY chksend_set.addr_caption "Comprobación de los destinatarios en la libreta de direcciones">
+<!ENTITY chksend_set.addr_confirm "Confirmar si los destinatarios">
+<!ENTITY chksend_set.addr_confirm_f "se encuentran">
+<!ENTITY chksend_set.addr_confirm_nf "no se encuentran">
+<!ENTITY chksend_set.addr_confirm2 "en la libreta de direcciones">
+<!ENTITY chksend_set.addr_addrbook "Buscar en:">
+<!ENTITY chksend_set.addr_search_domain "Buscar por dominios">
+<!ENTITY chksend_set.addr_all_ab "Todas las libretas de direcciones">
+<!ENTITY chksend_set.rec_caption "Comprobación de los nombres de los destinatarios">
+<!ENTITY chksend_set.rec_corr "Corregir los nombres si no coinciden con la libreta de direcciones">
+<!ENTITY chksend_set.rec_rem "Borrar los nombres de los destinatarios">
+<!ENTITY chksend_set.rec_none "No hacer nada">
+<!ENTITY chksend_set.rec_conf "Confirmar antes de corregir">
+<!ENTITY chksend_set.rec_event "Comprobar destinatarios:">
+<!ENTITY chksend_set.rec_event_open "Al abrir una ventana de redacción">
+<!ENTITY chksend_set.rec_event_send "Antes de enviar el mensaje">
+<!ENTITY chksend_set.rec_event_both "Ambos">

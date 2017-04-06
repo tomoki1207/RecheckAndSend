@@ -1,0 +1,73 @@
+<!ENTITY chksend_set.title "Check and Send Preferences">
+<!ENTITY chksend_set.identity "Identity:">
+<!ENTITY chksend_set.default_identity "Common">
+<!ENTITY chksend_set.use_default "Use Common">
+<!ENTITY chksend_set.use_default_note "This identity uses Common setting. Uncheck the Use Common in order to set options to this identity.">
+<!ENTITY chksend_set.gentab "General">
+<!ENTITY chksend_set.attachtab "Attachments">
+<!ENTITY chksend_set.wordstab "Words">
+<!ENTITY chksend_set.addrtab "Recipients">
+<!ENTITY chksend_set.reciptab "Recipient names">
+<!ENTITY chksend_set.confirm_caption "Sending Confirmation">
+<!ENTITY chksend_set.confirm_always "Confirm before you send a message">
+<!ENTITY chksend_set.confirm_always_woerr "Only when no error was found">
+<!ENTITY chksend_set.blank_check_recip_type_caption "Recipient Type Confirmation">
+<!ENTITY chksend_set.blank_check_recip_type "Confirm if the recipients in the following are blank">
+<!ENTITY chksend_set.attach_caption "Attachment Checking">
+<!ENTITY chksend_set.check_attach1 "Confirm if the following words">
+<!ENTITY chksend_set.check_attach2 "in the message without attachments">
+<!ENTITY chksend_set.check_attach_menu1 "appear">
+<!ENTITY chksend_set.check_attach_menu2 "don&apos;t appear">
+<!ENTITY chksend_set.attach_notice "* Use | as a delimiter if you input several words.">
+<!ENTITY chksend_set.regexp "Interpret the query as a regular expression">
+<!ENTITY chksend_set.case_sens "Search in a case-sensitive manner">
+<!ENTITY chksend_set.ignore_quote "Ignore the occurrences in quoted text">
+<!ENTITY chksend_set.check_target "Search in:">
+<!ENTITY chksend_set.check_target_subject "Subject">
+<!ENTITY chksend_set.check_target_body "Message body">
+<!ENTITY chksend_set.check_attach_ext "Confirm if attachments have the following extensions">
+<!ENTITY chksend_set.check_attach_ext_note "* Use | as a delimiter if you input several extensions.">
+<!ENTITY chksend_set.check_attach_cap "Attachments Size Checking">
+<!ENTITY chksend_set.check_attach_size "Confirm if the size of attachments exceeds">
+<!ENTITY chksend_set.check_attach_size_kb "KB">
+<!ENTITY chksend_set.word_caption "Word Checking">
+<!ENTITY chksend_set.check_word1 "Confirm if the following words">
+<!ENTITY chksend_set.check_word2 "in the message">
+<!ENTITY chksend_set.check_word_menu1 "appear">
+<!ENTITY chksend_set.check_word_menu2 "don&apos;t appear">
+<!ENTITY chksend_set.word_notice "* Use | as a delimiter if you input several words.">
+<!ENTITY chksend_set.regexp_word "Interpret the query as a regular expression">
+<!ENTITY chksend_set.case_sens_word "Search in a case-sensitive manner">
+<!ENTITY chksend_set.ignore_quote_word "Ignore the occurrences in quoted text">
+<!ENTITY chksend_set.check_subject_word "Check the subject, too">
+<!ENTITY chksend_set.recip_common_caption "Common">
+<!ENTITY chksend_set.check_recip_type "Check the addresses in the following:">
+<!ENTITY chksend_set.check_recip_type_to "To">
+<!ENTITY chksend_set.check_recip_type_cc "Cc">
+<!ENTITY chksend_set.check_recip_type_bcc "Bcc">
+<!ENTITY chksend_set.check_recip_type_reply "Reply-To">
+<!ENTITY chksend_set.check_recip_type_news "Newsgroup">
+<!ENTITY chksend_set.check_recip_type_follow "Followup-To">
+<!ENTITY chksend_set.addr_check_with_word "Check recipients only when attachments/words checkings find errors">
+<!ENTITY chksend_set.show_addr_any "Popup all recipients">
+<!ENTITY chksend_set.senderinfo_caption "Recipients Checking by Sender Information">
+<!ENTITY chksend_set.senderinfo_confirm "Confirm if recipients&apos; domains differ from a sender&apos;s one">
+<!ENTITY chksend_set.domain_level1 "Search within">
+<!ENTITY chksend_set.domain_level2 "th-level domain (input 0 for whole domain)">
+<!ENTITY chksend_set.addr_caption "Recipients Checking by Address Book">
+<!ENTITY chksend_set.addr_confirm "Confirm if recipients are">
+<!ENTITY chksend_set.addr_confirm_f "Found">
+<!ENTITY chksend_set.addr_confirm_nf "Not Found">
+<!ENTITY chksend_set.addr_confirm2 "in the address book">
+<!ENTITY chksend_set.addr_addrbook "Search in:">
+<!ENTITY chksend_set.addr_search_domain "Search by domains">
+<!ENTITY chksend_set.addr_all_ab "All Address Books">
+<!ENTITY chksend_set.rec_caption "Recipient Name Checking">
+<!ENTITY chksend_set.rec_corr "Correct recipient names if they differ from names in an address book">
+<!ENTITY chksend_set.rec_rem "Remove recipient names">
+<!ENTITY chksend_set.rec_none "Nothing is done">
+<!ENTITY chksend_set.rec_conf "Confirm before the correction">
+<!ENTITY chksend_set.rec_event "Check recipients:">
+<!ENTITY chksend_set.rec_event_open "On opening a message compose window">
+<!ENTITY chksend_set.rec_event_send "Before sending a message">
+<!ENTITY chksend_set.rec_event_both "Both">

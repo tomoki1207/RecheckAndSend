@@ -1,0 +1,73 @@
+<!ENTITY chksend_set.title "Check and Send voorkeuren">
+<!ENTITY chksend_set.identity "Identiteit:">
+<!ENTITY chksend_set.default_identity "Gebruikelijk">
+<!ENTITY chksend_set.use_default "Gebruikelijk toepassen">
+<!ENTITY chksend_set.use_default_note "Deze identiteit gebruikt de gebruikelijke instelling. Vink ‘Gebruikelijk toepassen’ uit om de opties voor deze identiteit in te stellen.">
+<!ENTITY chksend_set.gentab "Algemeen">
+<!ENTITY chksend_set.attachtab "Bijlagen">
+<!ENTITY chksend_set.wordstab "Woorden">
+<!ENTITY chksend_set.addrtab "Ontvangers">
+<!ENTITY chksend_set.reciptab "Ontvangersnamen">
+<!ENTITY chksend_set.confirm_caption "Verzendbevestiging">
+<!ENTITY chksend_set.confirm_always "Bevestigen voor verzenden bericht">
+<!ENTITY chksend_set.confirm_always_woerr "Alleen wanneer geen fout optreedt">
+<!ENTITY chksend_set.blank_check_recip_type_caption "Ontvangerstypebevestiging">
+<!ENTITY chksend_set.blank_check_recip_type "Bevestigen als de ontvangers in de volgende leeg zijn">
+<!ENTITY chksend_set.attach_caption "Bijlage controleren">
+<!ENTITY chksend_set.check_attach1 "Bevestigen als de volgende woorden">
+<!ENTITY chksend_set.check_attach2 "in het bericht zonder bijlagen">
+<!ENTITY chksend_set.check_attach_menu1 "voorkomen">
+<!ENTITY chksend_set.check_attach_menu2 "niet voorkomen">
+<!ENTITY chksend_set.attach_notice "* Gebruik | als een scheidingsteken indien u meerdere woorden ingeeft.">
+<!ENTITY chksend_set.regexp "De zoekopdracht als een reguliere expressie interpreteren">
+<!ENTITY chksend_set.case_sens "Zoekopdracht is hoofdlettergevoelig">
+<!ENTITY chksend_set.ignore_quote "Gevallen in aangehaalde tekst negeren">
+<!ENTITY chksend_set.check_target "Zoeken in:">
+<!ENTITY chksend_set.check_target_subject "Onderwerp">
+<!ENTITY chksend_set.check_target_body "Berichttekst">
+<!ENTITY chksend_set.check_attach_ext "Bevestigen als de bijlagen de volgende extensies hebben">
+<!ENTITY chksend_set.check_attach_ext_note "* Gebruik | als een scheidingsteken indien u meerdere extensies ingeeft.">
+<!ENTITY chksend_set.check_attach_cap "Controle bijlagegrootte">
+<!ENTITY chksend_set.check_attach_size "Bevestigen als de grootte van bijlagen boven">
+<!ENTITY chksend_set.check_attach_size_kb "KB uitkomt">
+<!ENTITY chksend_set.word_caption "Woordcontrole">
+<!ENTITY chksend_set.check_word1 "Bevestigen als de volgende woorden">
+<!ENTITY chksend_set.check_word2 "in het bericht">
+<!ENTITY chksend_set.check_word_menu1 "voorkomen">
+<!ENTITY chksend_set.check_word_menu2 "niet voorkomen">
+<!ENTITY chksend_set.word_notice "* Gebruik | als een scheidingsteken indien u meerdere woorden ingeeft.">
+<!ENTITY chksend_set.regexp_word "De zoekopdracht als een reguliere expressie interpreteren">
+<!ENTITY chksend_set.case_sens_word "Zoekopdracht is hoofdlettergevoelig">
+<!ENTITY chksend_set.ignore_quote_word "Gevallen in aangehaalde tekst negeren">
+<!ENTITY chksend_set.check_subject_word "Onderwerpregel ook doorzoeken">
+<!ENTITY chksend_set.recip_common_caption "Gebruikelijk">
+<!ENTITY chksend_set.check_recip_type "Adressen in de volgende velden controleren:">
+<!ENTITY chksend_set.check_recip_type_to "Aan">
+<!ENTITY chksend_set.check_recip_type_cc "Cc">
+<!ENTITY chksend_set.check_recip_type_bcc "Bcc">
+<!ENTITY chksend_set.check_recip_type_reply "Antwoorden aan">
+<!ENTITY chksend_set.check_recip_type_news "Nieuwsgroep">
+<!ENTITY chksend_set.check_recip_type_follow "Opvolging van">
+<!ENTITY chksend_set.addr_check_with_word "Ontvangers alleen controleren wanneer controle op bijlagen/woorden fouten oplevert">
+<!ENTITY chksend_set.show_addr_any "Alle ontvangers in pop-up weergeven">
+<!ENTITY chksend_set.senderinfo_caption "Ontvangers controleren op verzendinformatie">
+<!ENTITY chksend_set.senderinfo_confirm "Bevestigen indien het domein van de ontvanger afwijkt van dat van de verzender">
+<!ENTITY chksend_set.domain_level1 "Zoeken binnen">
+<!ENTITY chksend_set.domain_level2 "e niveau van het domein (0 voor het gehele domein)">
+<!ENTITY chksend_set.addr_caption "Ontvangers controleren op adresboek">
+<!ENTITY chksend_set.addr_confirm "Bevestigen als de ontvangers">
+<!ENTITY chksend_set.addr_confirm_f "worden aangetroffen">
+<!ENTITY chksend_set.addr_confirm_nf "niet worden aangetroffen">
+<!ENTITY chksend_set.addr_confirm2 "in het adresboek">
+<!ENTITY chksend_set.addr_addrbook "Zoeken in:">
+<!ENTITY chksend_set.addr_search_domain "Op domein zoeken">
+<!ENTITY chksend_set.addr_all_ab "Alle adresboeken">
+<!ENTITY chksend_set.rec_caption "Controle ontvangersnaam">
+<!ENTITY chksend_set.rec_corr "Ontvangersnamen corrigeren als ze afwijken van namen in een adresboek">
+<!ENTITY chksend_set.rec_rem "Ontvangersnamen verwijderen">
+<!ENTITY chksend_set.rec_none "Er is niets gedaan">
+<!ENTITY chksend_set.rec_conf "Bevestigen voor correctie">
+<!ENTITY chksend_set.rec_event "Ontvangers controleren:">
+<!ENTITY chksend_set.rec_event_open "Bij openen van een nieuw berichtvenster">
+<!ENTITY chksend_set.rec_event_send "Voor verzenden van bericht">
+<!ENTITY chksend_set.rec_event_both "Beide">

@@ -1,0 +1,73 @@
+<!ENTITY chksend_set.title "Nastavení Check and Send">
+<!ENTITY chksend_set.identity "Identita:">
+<!ENTITY chksend_set.default_identity "Výchozí">
+<!ENTITY chksend_set.use_default "Použít výchozí">
+<!ENTITY chksend_set.use_default_note "Tato identita používá výchozí nastavení. Zrušte zaškrtnutí Použít výchozí pro nastavení možností k této identitě.">
+<!ENTITY chksend_set.gentab "Všeobecné">
+<!ENTITY chksend_set.attachtab "Přílohy">
+<!ENTITY chksend_set.wordstab "Slova">
+<!ENTITY chksend_set.addrtab "Příjemci">
+<!ENTITY chksend_set.reciptab "Jména příjemců">
+<!ENTITY chksend_set.confirm_caption "Potvrzení zobrazení">
+<!ENTITY chksend_set.confirm_always "Potvrdit před odesláním zprávy">
+<!ENTITY chksend_set.confirm_always_woerr "Pokud není nalezena žádná chyba">
+<!ENTITY chksend_set.blank_check_recip_type_caption "Potvrzení typu příjemců">
+<!ENTITY chksend_set.blank_check_recip_type "Potvrdit, když jsou prázdná následující pole příjemců">
+<!ENTITY chksend_set.attach_caption "Kontrola příloh">
+<!ENTITY chksend_set.check_attach1 "Požadovat potvrzení když se následující slova">
+<!ENTITY chksend_set.check_attach2 "v zprávě bez příloh">
+<!ENTITY chksend_set.check_attach_menu1 "objevují">
+<!ENTITY chksend_set.check_attach_menu2 "neobjevují">
+<!ENTITY chksend_set.attach_notice "* Když zadáváte několik slov, použijte znak | jako oddělovač.">
+<!ENTITY chksend_set.regexp "Interpretovat požadavky jako regulérní výraz">
+<!ENTITY chksend_set.case_sens "Při hledání rozlišovat malá a velká písmena">
+<!ENTITY chksend_set.ignore_quote "Ignorovat výskyty v uvozovkách">
+<!ENTITY chksend_set.check_target "Hledat v:">
+<!ENTITY chksend_set.check_target_subject "Předmět">
+<!ENTITY chksend_set.check_target_body "Tělo správy">
+<!ENTITY chksend_set.check_attach_ext "Požadovat potvrzení když příloha má něktorou z následujících přípon">
+<!ENTITY chksend_set.check_attach_ext_note "* Použijte znak | jako oddělovač">
+<!ENTITY chksend_set.check_attach_cap "Kontrola velikosti příloh">
+<!ENTITY chksend_set.check_attach_size "Požadovat potvrzení když velikost příloh přesáhne">
+<!ENTITY chksend_set.check_attach_size_kb "kB">
+<!ENTITY chksend_set.word_caption "Kontrola slov">
+<!ENTITY chksend_set.check_word1 "Požadovat potvrzení u následujících slov">
+<!ENTITY chksend_set.check_word2 "v zprávě">
+<!ENTITY chksend_set.check_word_menu1 "objevují">
+<!ENTITY chksend_set.check_word_menu2 "neobjevují">
+<!ENTITY chksend_set.word_notice "* Když zadáváte několik slov, použijte znak | jako oddělovač.">
+<!ENTITY chksend_set.regexp_word "Interpretovat požadavky jako regulární výraz">
+<!ENTITY chksend_set.case_sens_word "Při hledání rozlišovat malá a velká písmena">
+<!ENTITY chksend_set.ignore_quote_word "Ignorovat výskyty v uvozovkách">
+<!ENTITY chksend_set.check_subject_word "Kontrolovat také pole Předmět">
+<!ENTITY chksend_set.recip_common_caption "Výchozí">
+<!ENTITY chksend_set.check_recip_type "Kontrolovat adresy v následujících polích:">
+<!ENTITY chksend_set.check_recip_type_to "Komu">
+<!ENTITY chksend_set.check_recip_type_cc "Kopie">
+<!ENTITY chksend_set.check_recip_type_bcc "Skrytá kopie">
+<!ENTITY chksend_set.check_recip_type_reply "Odpověď na">
+<!ENTITY chksend_set.check_recip_type_news "Skupina">
+<!ENTITY chksend_set.check_recip_type_follow "Pokračovat na">
+<!ENTITY chksend_set.addr_check_with_word "Kontrolovat příjemce jen v případě, že kontrola příloh/slov najde chybu">
+<!ENTITY chksend_set.show_addr_any "Vyskakovací okno se všemi příjemci">
+<!ENTITY chksend_set.senderinfo_caption "Kontrola příjemců podle informací odesílatele">
+<!ENTITY chksend_set.senderinfo_confirm "Potvrzení pokud se domény příjemce liší od odesílatele">
+<!ENTITY chksend_set.domain_level1 "Hledat v rámci">
+<!ENTITY chksend_set.domain_level2 ". úrovně domény (zadejte 0 pro kompletní doménu)">
+<!ENTITY chksend_set.addr_caption "Kontrola příjemců podle adresáře">
+<!ENTITY chksend_set.addr_confirm "Potvrdit, když příjemci">
+<!ENTITY chksend_set.addr_confirm_f "byli nalezeni">
+<!ENTITY chksend_set.addr_confirm_nf "nebyli nenalezeni">
+<!ENTITY chksend_set.addr_confirm2 "v adresáři">
+<!ENTITY chksend_set.addr_addrbook "Hledat v:">
+<!ENTITY chksend_set.addr_search_domain "Hledat podle domény">
+<!ENTITY chksend_set.addr_all_ab "Všechny adresáře">
+<!ENTITY chksend_set.rec_caption "Kontrola jména příjemců">
+<!ENTITY chksend_set.rec_corr "Opravit jméno příjemce pokud se odlišuje od jména v adresáři">
+<!ENTITY chksend_set.rec_rem "Odstranit jméno příjemce">
+<!ENTITY chksend_set.rec_none "Nedělat nic">
+<!ENTITY chksend_set.rec_conf "Před opravou požadovat potvrzení">
+<!ENTITY chksend_set.rec_event "Kontrola příjemců:">
+<!ENTITY chksend_set.rec_event_open "Při otevření okna psaní zprávy">
+<!ENTITY chksend_set.rec_event_send "Před odesláním správy">
+<!ENTITY chksend_set.rec_event_both "Při obou">

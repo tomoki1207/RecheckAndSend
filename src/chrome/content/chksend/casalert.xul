@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet href="chrome://communicator/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://messenger/skin/prefPanels.css" type="text/css"?>
+<?xml-stylesheet href="chrome://communicator/skin/pref/pref.css" type="text/css"?>
+<?xml-stylesheet href="chrome://messenger/skin/messengercompose/messengercompose.css" type="text/css"?>
+<?xml-stylesheet href="chrome://chksend/skin/chksend.css" type="text/css"?>
+<!DOCTYPE dialog SYSTEM "chrome://chksend/locale/chksend.dtd">
+
+<dialog xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+  buttons="accept, cancel"
+  id="chksend-casalert"
+  flex="1"
+  style="max-width:40em;"
+  onload="onLoad()"
+  ondialogaccept="gAlert.onOK()"
+  ondialogcancel="gAlert.onCancel()">
+	<script type="application/x-javascript" src="chrome://chksend/content/casalert.js"/>
+	<description id="CASAlertDesc"></description>
+	<spacer style="height:0.5em;"/>
+	<hbox>
+		<listbox id="CASAlertList" flex="1" value="">
+		</listbox>
+		<richlistbox id="CASAlertListRich" flex="1" value="" collapsed="true"
+								 height="200px" suppressonselect="true">
+		</richlistbox>
+		<vbox>
+			<button id="CASButtonSelAll" label="&chksend.selall;" oncommand="gAlert.checkAll(true)"/>
+			<button id="CASButtonClrSel" label="&chksend.clrsel;" oncommand="gAlert.checkAll(false)"/>
+		</vbox>
+	</hbox>
+</dialog>

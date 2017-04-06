@@ -1,0 +1,73 @@
+<!ENTITY chksend_set.title "Настройки Check and Send">
+<!ENTITY chksend_set.identity "Учетная запись:">
+<!ENTITY chksend_set.default_identity "Стандартная">
+<!ENTITY chksend_set.use_default "Используй стандартную">
+<!ENTITY chksend_set.use_default_note "Эта учетная запись использует стандартные настройки. Отмените &quot;Используй стандартную&quot; чтобы настроить эту запись индивидуально.">
+<!ENTITY chksend_set.gentab "Общее">
+<!ENTITY chksend_set.attachtab "Вложения">
+<!ENTITY chksend_set.wordstab "Слова">
+<!ENTITY chksend_set.addrtab "Получатели">
+<!ENTITY chksend_set.reciptab "Имена получателей">
+<!ENTITY chksend_set.confirm_caption "Подтверждать отправление">
+<!ENTITY chksend_set.confirm_always "Запрашивать подтверждение перед отправкой сообщения">
+<!ENTITY chksend_set.confirm_always_woerr "Только если не было найдено никаких ошибок">
+<!ENTITY chksend_set.blank_check_recip_type_caption "Проверка получателей">
+<!ENTITY chksend_set.blank_check_recip_type "Запрашивать подтверждение, если получатели отсутствуют в полях:">
+<!ENTITY chksend_set.attach_caption "Проверка вложений">
+<!ENTITY chksend_set.check_attach1 "Запрашивать подтверждение если следующие слова">
+<!ENTITY chksend_set.check_attach2 "в сообщении без вложений">
+<!ENTITY chksend_set.check_attach_menu1 "будут найдены">
+<!ENTITY chksend_set.check_attach_menu2 "не будут найдены">
+<!ENTITY chksend_set.attach_notice "* используйте | как разделитель для нескольких слов">
+<!ENTITY chksend_set.regexp "Рассматривать запрос как регулярное выражение">
+<!ENTITY chksend_set.case_sens "Учитывать регистр при поиске">
+<!ENTITY chksend_set.ignore_quote "Игнорировать текст в цитатах">
+<!ENTITY chksend_set.check_target "Искать в:">
+<!ENTITY chksend_set.check_target_subject "Теме">
+<!ENTITY chksend_set.check_target_body "Самом сообщении">
+<!ENTITY chksend_set.check_attach_ext "Запрашивать подтверждение если вложения имеют следующие расширения">
+<!ENTITY chksend_set.check_attach_ext_note "* используйте | как разделитель для нескольких слов">
+<!ENTITY chksend_set.check_attach_cap "Проверка размера вложений">
+<!ENTITY chksend_set.check_attach_size "Запрашивать подтверждение если размер вложений превышает">
+<!ENTITY chksend_set.check_attach_size_kb "KB">
+<!ENTITY chksend_set.word_caption "Проверка слов">
+<!ENTITY chksend_set.check_word1 "Запрашивать подтверждение если следующие слова">
+<!ENTITY chksend_set.check_word2 "в сообщении">
+<!ENTITY chksend_set.check_word_menu1 "будут найдены">
+<!ENTITY chksend_set.check_word_menu2 "не будут найдены">
+<!ENTITY chksend_set.word_notice "* используйте | как разделитель для нескольких слов">
+<!ENTITY chksend_set.regexp_word "Рассматривать запрос как регулярное выражение">
+<!ENTITY chksend_set.case_sens_word "Учитывать регистр при поиске">
+<!ENTITY chksend_set.ignore_quote_word "Игнорировать текст в цитатах">
+<!ENTITY chksend_set.check_subject_word "Также проверять тему">
+<!ENTITY chksend_set.recip_common_caption "Общее">
+<!ENTITY chksend_set.check_recip_type "Проверять адрес в полях:">
+<!ENTITY chksend_set.check_recip_type_to "Кому">
+<!ENTITY chksend_set.check_recip_type_cc "Копия">
+<!ENTITY chksend_set.check_recip_type_bcc "Скрытая копия">
+<!ENTITY chksend_set.check_recip_type_reply "Обратный адрес">
+<!ENTITY chksend_set.check_recip_type_news "Группа новостей">
+<!ENTITY chksend_set.check_recip_type_follow "Ответ в группу новостей">
+<!ENTITY chksend_set.addr_check_with_word "Проверять получателей только если были найдены ошибки при проверке слов/вложений">
+<!ENTITY chksend_set.show_addr_any "Показывать всех получателей">
+<!ENTITY chksend_set.senderinfo_caption "Проверять получателей по информации отправителя">
+<!ENTITY chksend_set.senderinfo_confirm "Запрашивать подтверждение, если домены получателя и отправителя различаются">
+<!ENTITY chksend_set.domain_level1 "Проверять домен до">
+<!ENTITY chksend_set.domain_level2 "-ого уровня (0-проверять весь домен)">
+<!ENTITY chksend_set.addr_caption "Проверять получателей по адресной книге">
+<!ENTITY chksend_set.addr_confirm "Запрашивать подтверждение, если получатель">
+<!ENTITY chksend_set.addr_confirm_f "найден">
+<!ENTITY chksend_set.addr_confirm_nf "не найден">
+<!ENTITY chksend_set.addr_confirm2 "в адресной книге">
+<!ENTITY chksend_set.addr_addrbook "Искать в:">
+<!ENTITY chksend_set.addr_search_domain "Искать по имени домена">
+<!ENTITY chksend_set.addr_all_ab "Все адресные книги">
+<!ENTITY chksend_set.rec_caption "Проверка имени получателя">
+<!ENTITY chksend_set.rec_corr "Исправлять имена получателей, если они отличаются от имен в адресной книге">
+<!ENTITY chksend_set.rec_rem "Удалять имена получателей">
+<!ENTITY chksend_set.rec_none "Ничего не делать">
+<!ENTITY chksend_set.rec_conf "Подтверждать изменения">
+<!ENTITY chksend_set.rec_event "Проверять имена получателей:">
+<!ENTITY chksend_set.rec_event_open "Открывая окно создания сообщения">
+<!ENTITY chksend_set.rec_event_send "Перед отправлением">
+<!ENTITY chksend_set.rec_event_both "В обоих случаях">

@@ -1,0 +1,428 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet href="chrome://communicator/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://messenger/skin/prefPanels.css" type="text/css"?>
+<?xml-stylesheet href="chrome://communicator/skin/pref/pref.css" type="text/css"?>
+<?xml-stylesheet href="chrome://messenger/skin/messengercompose/messengercompose.css" type="text/css"?>
+<!DOCTYPE dialog SYSTEM "chrome://chksend/locale/chksend_settings.dtd">
+
+<dialog xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+  buttons="accept, cancel"
+  title="&chksend_set.title;"
+  id="chksend-settings"
+  onload="onLoad()"
+  flex="1"
+  ondialogaccept="return gCASSet.savePrefs();"
+  ondialogcancel="return gCASSet.cancelPrefs();"
+  persist="screenX screenY">
+  <script type="application/x-javascript" src="chrome://global/content/nsUserSettings.js"/>
+  <script type="application/x-javascript" src="chrome://chksend/content/settings.js"/>
+
+  <broadcasterset id="CASSetBroadcasters">
+	<broadcaster id="CASSet:Attach" disabled="false"/>
+	<broadcaster id="CASSet:Word" disabled="false"/>
+	<broadcaster id="CASSet:Addr_AB" disabled="false"/>
+	<broadcaster id="CASSet:Addr_Sender" disabled="false"/>
+  </broadcasterset>
+  
+  <hbox align="center">
+	<label value="&chksend_set.identity;" />
+	<menulist id="idList" class="identity-menulist" label="..." flex="1"
+			  value="default" oncommand="gCASSet.onChangeId(this)">
+	  <menupopup id="idListPopup" onpopupshowing="gCASSet.onPopupshowingForId()" >
+		<menuitem label="&chksend_set.default_identity;" value="default" class="identity-popup-item"/>
+	  </menupopup>
+	</menulist>
+	<checkbox id="CSUseDefault" label="&chksend_set.use_default;" checked="true"
+			  prefstring="chksend.use_default_pref"
+			  defaultpref="true" oncommand="gCASSet.initPanesForId(true)"/>
+  </hbox>
+  
+  <spacer style="height:0.5em;"/>
+  <groupbox id="CSMsgForId" collapsed="true" flex="1">
+  	<description>
+  		&chksend_set.use_default_note;
+  	</description>
+  </groupbox>
+  <tabbox id="CSPanes" flex="1">
+	<tabs>
+	  <tab id="gentab" label="&chksend_set.gentab;"/>
+	  <tab id="attachtab" label="&chksend_set.attachtab;"/>
+	  <tab id="wordtab" label="&chksend_set.wordstab;"/>
+	  <tab id="addrtab" label="&chksend_set.addrtab;"/>
+	  <tab id="nametab" label="&chksend_set.reciptab;"/>
+	</tabs>
+	<tabpanels>
+		<!-- General -->
+	  <tabpanel>
+	  	<vbox flex="1">
+			<groupbox>
+			<caption label="&chksend_set.confirm_caption;"/>
+			<checkbox id="CSConfirm" label="&chksend_set.confirm_always;"
+			  prefstring="chksend.confirm_always" defaultpref="true"
+			  oncommand="gCASSet.setOptionDisabled(event.target)"/>
+			<hbox>
+			  <spacer style="width:2.0em;"/>
+			  <checkbox id="CSConfirmWOErr" label="&chksend_set.confirm_always_woerr;" flex="1"
+				  prefstring="chksend.confirm_always_woerr"
+				  defaultpref="false"/>
+			</hbox>
+			</groupbox>
+			<groupbox>
+				<caption label="&chksend_set.blank_check_recip_type_caption;"/>
+			  <label value="&chksend_set.blank_check_recip_type;"/>
+			  <hbox align="center">
+				<spacer style="width:2.0em;"/>
+				<checkbox id="CSBlankCheckTo" label="&chksend_set.check_recip_type_to;"
+				  prefstring="chksend.bcheck-addr_to" defaultpref="false"/>
+				<checkbox id="CSBlankCheckCc" label="&chksend_set.check_recip_type_cc;"
+				  prefstring="chksend.bcheck-addr_cc" defaultpref="false"/>
+				<checkbox id="CSBlankCheckBcc" label="&chksend_set.check_recip_type_bcc;"
+				  prefstring="chksend.bcheck-addr_bcc" defaultpref="false"/>
+				<checkbox id="CSBlankCheckReply" label="&chksend_set.check_recip_type_reply;"
+				  prefstring="chksend.bcheck-addr_reply" defaultpref="false"/>
+				<checkbox id="CSBlankCheckNews" label="&chksend_set.check_recip_type_news;"
+				  prefstring="chksend.bcheck-addr_newsgroups" defaultpref="false"/>
+				<checkbox id="CSBlankCheckFollow" label="&chksend_set.check_recip_type_follow;"
+				  prefstring="chksend.bcheck-addr_followup" defaultpref="false"/>
+			  </hbox>
+		  </groupbox>
+ 			</vbox>
+	  </tabpanel>
+	  
+	  <!-- Attachments -->
+	  <tabpanel>
+		<vbox flex="1">
+		  <groupbox>
+			<caption label="&chksend_set.attach_caption;"/>
+			<vbox>
+			  <hbox align="center">
+				<checkbox id="CSAttach" label="&chksend_set.check_attach1;"
+	  				prefstring="chksend.check_attach" defaultpref="true"
+					oncommand="gCASSet.setOptionDisabled(event.target)"/>
+				<menulist id="CSAttachPopup" preftype="string"
+				  prefstring="chksend.check_attach_appear" defaultpref="appear"
+				  observes="CASSet:Attach">
+				  <menupopup>
+					<menuitem label="&chksend_set.check_attach_menu1;" value="appear"/>
+					<menuitem label="&chksend_set.check_attach_menu2;" value="notAppear"/>
+				  </menupopup>
+				</menulist>
+				<label value="&chksend_set.check_attach2;"/>
+			  </hbox>
+			  <!--
+			  <checkbox id="CSAttach" label="&chksend_set.check_attach;"
+				prefstring="chksend.check_attach" defaultpref="true"
+				oncommand="gCASSet.setOptionDisabled(event.target)"
+				/>
+				-->
+			  <spacer style="height:0.5em;"/>
+			  <hbox flex="1">
+				<spacer style="width:2.0em;"/>
+				<textbox id="CSAttachWords" multiline="false" value="" flex="1"
+				  prefstring="chksend.attach_words" observes="CASSet:Attach"
+				  defaultpref=""/>
+			  </hbox>
+			  <hbox flex="1">
+				<spacer style="width:2.0em;"/>
+				<label id="CSAttachNotice" value="&chksend_set.attach_notice;"
+				  observes="CASSet:Attach"/>
+			  </hbox>
+			  <spacer style="height:0.5em;"/>
+			  <hbox flex="1">
+				<spacer style="width:2.0em;"/>
+				<checkbox id="CSRegExp" label="&chksend_set.regexp;"
+				  prefstring="chksend.regexp" defaultpref="false"
+				  oncommand="gCASSet.switchNoteForAttachQuery()"
+				  observes="CASSet:Attach"/>
+			  </hbox>
+			  <hbox flex="1">
+				<spacer style="width:2.0em;"/>
+				<checkbox id="CSCaseSens" label="&chksend_set.case_sens;"
+				  prefstring="chksend.case_sensitive" defaultpref="false"
+				  observes="CASSet:Attach"/>
+			  </hbox>
+			  <hbox flex="1">
+				<spacer style="width:2.0em;"/>
+				<checkbox id="CSIgnoreQuote" label="&chksend_set.ignore_quote;"
+				  prefstring="chksend.ignore_quote" defaultpref="true"
+				  observes="CASSet:Attach"/>
+			  </hbox>
+			  <!--
+			  <hbox flex="1">
+				<spacer style="width:2.0em;"/>
+				<checkbox id="CSCheckSubject" label="&chksend_set.check_subject;"
+				  prefstring="chksend.check_subject" defaultpref="true"
+				  observes="CASSet:Attach"/>
+			  </hbox>
+			  <hbox flex="1">
+				<spacer style="width:4.0em;"/>
+				<checkbox id="CSCheckSubjectOnly" label="Check only subject"
+					prefstring="chksend.check_subject_only" defaultpref="false"
+					observes="CASSet:Attach"/>
+			  </hbox>
+			  -->
+			  <spacer style="height:0.5em;"/>
+			  <hbox>
+			  <spacer style="width:2.0em;"/>
+				<label value="&chksend_set.check_target;" observes="CASSet:Attach"/>
+			  </hbox>
+				<hbox>
+				<spacer style="width:4.0em;"/>
+			  <vbox>
+			  	<checkbox id="CSCheckSubject" label="&chksend_set.check_target_subject;" prefstring="chksend.check_subject"
+			  						defaultpref="true" observes="CASSet:Attach"/>
+			  	<checkbox id="CSCheckBody" label="&chksend_set.check_target_body;" prefstring="chksend.check_body"
+			  				  						defaultpref="true" observes="CASSet:Attach"/>
+			  </vbox>
+			  </hbox>
+  			<spacer style="height:1.0em;"/>
+			  <label value="&chksend_set.check_attach_ext;"/>
+			  <hbox flex="1">
+				<spacer style="width:2.0em;"/>
+				<textbox id="CSCheckFileExt" flex="1" prefstring="chksend.ng_extensions" defaultpref=""/>
+			  </hbox>
+  			  <hbox flex="1">
+				<spacer style="width:2.0em;"/>
+        	    <label value="&chksend_set.check_attach_ext_note;"/>
+   			  </hbox>
+			</vbox>
+		  </groupbox>
+		  <groupbox>
+		  	<caption label="&chksend_set.check_attach_cap;"/>
+		  	<hbox align="center">
+		  		<label value="&chksend_set.check_attach_size;"/>
+		  		<textbox id="CSCheckAttachSize" size="5" multiline="false"
+				  prefstring="chksend.attach_size_limit" defaultpref="0"
+				  onblur="gCASSet.verifyTextBoxForNum(this)"
+				  />
+				  <label value="&chksend_set.check_attach_size_kb;"/>
+		  	</hbox>
+		  </groupbox>
+		</vbox>
+	  </tabpanel>
+	  
+	  <!-- Words -->
+	  <tabpanel>
+		<vbox flex="1">
+		  <groupbox>
+			<caption label="&chksend_set.word_caption;"/>
+			<vbox>
+			  <hbox align="center">
+				<checkbox id="CSWord" label="&chksend_set.check_word1;"
+	  				prefstring="chksend.check_word" defaultpref="true"
+					oncommand="gCASSet.setOptionDisabled(event.target)"/>
+				<menulist id="CSWordPopup" preftype="string"
+				  prefstring="chksend.check_word_appear" defaultpref="appear"
+				  observes="CASSet:Word">
+				  <menupopup>
+					<menuitem label="&chksend_set.check_word_menu1;" value="appear"/>
+					<menuitem label="&chksend_set.check_word_menu2;" value="notAppear"/>
+				  </menupopup>
+				</menulist>
+				<label value="&chksend_set.check_word2;"/>
+			  </hbox>
+			  <!--
+			  <checkbox id="CSWord" label="&chksend_set.check_word;"
+				prefstring="chksend.check_word" defaultpref="true"
+				oncommand="gCASSet.setOptionDisabled(event.target)"
+				/>
+				-->
+			  <spacer style="height:0.5em;"/>
+			  <hbox flex="1">
+				<spacer style="width:2.0em;"/>
+				<textbox id="CSCheckWords" multiline="false" value="" flex="1"
+				  prefstring="chksend.check_words" observes="CASSet:Word"
+				  defaultpref=""/>
+			  </hbox>
+			  <hbox flex="1">
+				<spacer style="width:2.0em;"/>
+				<label id="CSWordNotice" value="&chksend_set.word_notice;"
+				  observes="CASSet:Word"/>
+			  </hbox>
+			  <spacer style="height:0.5em;"/>
+			  <hbox flex="1">
+				<spacer style="width:2.0em;"/>
+				<checkbox id="CSRegExpWord" label="&chksend_set.regexp_word;"
+				  prefstring="chksend.regexp_word" defaultpref="false"
+				  oncommand="gCASSet.switchNoteForWordQuery()"
+				  observes="CASSet:Word"/>
+			  </hbox>
+			  <hbox flex="1">
+				<spacer style="width:2.0em;"/>
+				<checkbox id="CSCaseSensWord" label="&chksend_set.case_sens_word;"
+				  prefstring="chksend.case_sensitive_word" defaultpref="false"
+				  observes="CASSet:Word"/>
+			  </hbox>
+			  <hbox flex="1">
+				<spacer style="width:2.0em;"/>
+				<checkbox id="CSIgnoreQuoteWord" label="&chksend_set.ignore_quote_word;"
+				  prefstring="chksend.ignore_quote_word" defaultpref="true"
+				  observes="CASSet:Word"/>
+			  </hbox>
+			  <!--
+			  <hbox flex="1">
+				<spacer style="width:2.0em;"/>
+				<checkbox id="CSCheckSubjectWord" label="&chksend_set.check_subject_word;"
+				  prefstring="chksend.check_subject_word" defaultpref="true"
+				  observes="CASSet:Word"/>
+			  </hbox>
+			  <hbox flex="1">
+				<spacer style="width:4.0em;"/>
+				<checkbox id="CSCheckSubjectOnlyWord" label="Check only subject"
+					prefstring="chksend.check_subject_only_word" defaultpref="false"
+					observes="CASSet:Word"/>
+			  </hbox>
+			  -->
+ 			  <spacer style="height:0.5em;"/>
+			  <hbox>
+			  <spacer style="width:2.0em;"/>
+				<label value="&chksend_set.check_target;" observes="CASSet:Word"/>
+			  </hbox>
+				<hbox>
+				<spacer style="width:4.0em;"/>
+			  <vbox>
+			  	<checkbox id="CSCheckSubjectWord" label="&chksend_set.check_target_subject;" prefstring="chksend.check_subject_word"
+			  						defaultpref="true" observes="CASSet:Word"/>
+			  	<checkbox id="CSCheckBodyWord" label="&chksend_set.check_target_body;" prefstring="chksend.check_body_word"
+			  				  						defaultpref="true" observes="CASSet:Word"/>
+			  </vbox>
+			  </hbox>
+			</vbox>
+		  </groupbox>
+		</vbox>
+	  </tabpanel>
+	  
+	  <!-- Address -->
+	  <tabpanel>
+		<vbox flex="1">
+		  <groupbox>
+			<caption label="&chksend_set.recip_common_caption;"/>
+			<vbox>
+			  <label value="&chksend_set.check_recip_type;"/>
+			  <hbox align="center">
+				<spacer style="width:2.0em;"/>
+				<checkbox id="CSCheckTo" label="&chksend_set.check_recip_type_to;"
+				  prefstring="chksend.check_addrbook_to" defaultpref="true"/>
+				<checkbox id="CSCheckCc" label="&chksend_set.check_recip_type_cc;"
+				  prefstring="chksend.check_addrbook_cc" defaultpref="true"/>
+				<checkbox id="CSCheckBcc" label="&chksend_set.check_recip_type_bcc;"
+				  prefstring="chksend.check_addrbook_bcc" defaultpref="true"/>
+				<checkbox id="CSCheckReply" label="&chksend_set.check_recip_type_reply;"
+				  prefstring="chksend.check_addrbook_reply" defaultpref="true"/>
+				<checkbox id="CSCheckNews" label="&chksend_set.check_recip_type_news;"
+				  prefstring="chksend.check_addrbook_news" defaultpref="true"/>
+				<checkbox id="CSCheckFollow" label="&chksend_set.check_recip_type_follow;"
+				  prefstring="chksend.check_addrbook_follow" defaultpref="true"/>
+			  </hbox>
+  			  <checkbox id="CSCheckAddrWithWord" label="&chksend_set.addr_check_with_word;"
+				prefstring="chksend.check_addrbook_with_word" defaultpref="false"/>
+			  <checkbox id="CSShowAddrAny" label="&chksend_set.show_addr_any;"
+				prefstring="chksend.check_addrbook_any" defaultpref="false"
+				oncommand="gCASSet.setOptionDisabled(event.target)"/>
+			</vbox>
+		  </groupbox>
+		  <groupbox>
+			<caption label="&chksend_set.senderinfo_caption;"/>
+			<vbox>
+			  <checkbox id="CSCheckAddressBySender"
+				label="&chksend_set.senderinfo_confirm;"
+				prefstring="chksend.check_address_by_sender" defaultpref="false"
+				oncommand="gCASSet.setOptionDisabled(event.target)"/>
+			  <hbox align="center">
+				<spacer style="width:2.0em;"/>
+				<label value="&chksend_set.domain_level1;" observes="CASSet:Addr_Sender"/>
+				<textbox id="CSSenderMatchLevel" size="2" multiline="false"
+				  prefstring="chksend.sender_match_level" defaultpref="0"
+				  onblur="gCASSet.verifyTextBoxForNum(this)"
+				  observes="CASSet:Addr_Sender"
+				  />
+				<label value="&chksend_set.domain_level2;" observes="CASSet:Addr_Sender"/>
+			  </hbox>
+			</vbox>
+		  </groupbox>
+		  <groupbox>
+			<caption label="&chksend_set.addr_caption;"/>
+			<vbox>
+			  <hbox align="center">
+				<checkbox id="CSCheckAddress" label="&chksend_set.addr_confirm;"
+				  prefstring="chksend.check_address" defaultpref="false"
+				  oncommand="gCASSet.setOptionDisabled(event.target)"
+				  disabled="false"/>
+				<menulist id="CSSearchCriPopup" preftype="string"
+				  prefstring="chksend.check_addrbook_inbook" defaultpref="found"
+				  observes="CASSet:Addr_AB">
+				  <menupopup>
+					<menuitem label="&chksend_set.addr_confirm_f;" value="found"/>
+					<menuitem label="&chksend_set.addr_confirm_nf;" value="notFound"/>
+				  </menupopup>
+				</menulist>
+				<label id="CSAbLaterLabel" value="&chksend_set.addr_confirm2;"/>
+			  </hbox>
+			  <hbox align="center">
+				<spacer style="width:2.0em;"/>
+				<label control="CSAbPopup" observes="CASSet:Addr_AB"
+				  value="&chksend_set.addr_addrbook;"/>
+				<menulist id="CSAbPopup" prefstring="chksend.check_addrbook"
+				  observes="CASSet:Addr_AB" preftype="string" defaultpref="all">
+				  <menupopup id="CSAbPopup-menupopup">
+						<menuitem label="&chksend_set.addr_all_ab;" value="all"/>
+				  </menupopup>
+				</menulist>
+			  </hbox>
+			  <hbox align="center">
+				<spacer style="width:2.0em;"/>
+				<checkbox id="CSSearchDomain" label="&chksend_set.addr_search_domain;"
+				  prefstring="chksend.check_addrbook_domain" defaultpref="false"
+				  observes="CASSet:Addr_AB"/>
+			  </hbox>
+			  <hbox align="center">
+				<spacer style="width:4.0em;"/>
+				<label value="&chksend_set.domain_level1;" observes="CASSet:Addr_AB"/>
+				<textbox id="CSAddrBookMatchLevel" size="2" multiline="false"
+				  prefstring="chksend.addrbook_match_level" defaultpref="0"
+				  onblur="gCASSet.verifyTextBoxForNum(this)"
+				  observes="CASSet:Addr_AB"/>
+				<label value="&chksend_set.domain_level2;" observes="CASSet:Addr_AB"/>
+			  </hbox>
+			</vbox>
+		  </groupbox>
+		</vbox>
+	  </tabpanel>
+	  
+	  <!-- Recipients -->
+	  <tabpanel>
+	  	<vbox flex="1">
+	  		<groupbox>
+	  			<caption label="&chksend_set.rec_caption;"/>
+	  			<vbox>
+	  				<radiogroup id="CSRecipNameMode" defaultpref="2" prefstring="chksend.recip_name_mode"
+	  										oncommand="gCASSet.setOptionDisabled(this)">
+	  					<radio label="&chksend_set.rec_corr;"
+	  								 value="0"/>
+	  					<radio label="&chksend_set.rec_rem;" value="1"/>
+	  					<radio label="&chksend_set.rec_none;" value="2"/>
+	  				</radiogroup>
+	  				<spacer style="height:0.5em;"/>
+	  				<checkbox id="CSRecipNameAlert" label="&chksend_set.rec_conf;"
+	  									checked="true" prefstring="chksend.recip_name_alert" defaultpref="true"/>
+	  				<spacer style="height:0.5em;"/>
+	  				<label value="&chksend_set.rec_event;"/>
+	  				<hbox>
+	  					<spacer style="width:2.0em;"/>
+	  					<radiogroup id="CSRecipReplaceEvent" defaultpref="1"
+	  											prefstring="chksend.recip_replace_event">
+		  					<radio label="&chksend_set.rec_event_open;"
+		  								 value="0"/>
+	  						<radio label="&chksend_set.rec_event_send;" value="1"/>
+	  						<radio label="&chksend_set.rec_event_both;" value="2"/>
+	  					</radiogroup>
+  					</hbox>
+	  			</vbox>
+	  		</groupbox>
+	  	</vbox>
+	  </tabpanel>
+	</tabpanels>
+  </tabbox>
+</dialog>
+

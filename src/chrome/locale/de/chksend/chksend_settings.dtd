@@ -1,0 +1,73 @@
+<!ENTITY chksend_set.title "Check and Send - Einstellungen">
+<!ENTITY chksend_set.identity "Identität:">
+<!ENTITY chksend_set.default_identity "Standard-Einstellungen">
+<!ENTITY chksend_set.use_default "Standard-Einstellungen verwenden">
+<!ENTITY chksend_set.use_default_note "Die aktuelle Identität verwendet Standard-Einstellungen. Deaktivieren Sie die Option 'Standard-Einstellungen verwenden', um unter dieser Identität Einstellungen ändern zu können.">
+<!ENTITY chksend_set.gentab "Allgemein">
+<!ENTITY chksend_set.attachtab "Anhänge">
+<!ENTITY chksend_set.wordstab "Wörter">
+<!ENTITY chksend_set.addrtab "Empfänger">
+<!ENTITY chksend_set.reciptab "Empfängernamen">
+<!ENTITY chksend_set.confirm_caption "Nachrichtenversand bestätigen">
+<!ENTITY chksend_set.confirm_always "Vor dem Senden einer Nachricht benachrichtigen">
+<!ENTITY chksend_set.confirm_always_woerr "Nur wenn kein Fehler gefunden wurde">
+<!ENTITY chksend_set.blank_check_recip_type_caption "Empfängertyp bestätigen">
+<!ENTITY chksend_set.blank_check_recip_type "Benachrichtigen, wenn folgende Empfängertypen leer sind">
+<!ENTITY chksend_set.attach_caption "Anhänge prüfen">
+<!ENTITY chksend_set.check_attach1 "Benachrichtigen, wenn in einer Nachricht ohne Anhang folgende Wörter">
+<!ENTITY chksend_set.check_attach2 "werden:">
+<!ENTITY chksend_set.check_attach_menu1 "gefunden">
+<!ENTITY chksend_set.check_attach_menu2 "nicht gefunden">
+<!ENTITY chksend_set.attach_notice "* Die Eingabe mehrerer Wörter mit '|' trennen">
+<!ENTITY chksend_set.regexp "Als Suche nach regulären Ausdrücken interpretieren">
+<!ENTITY chksend_set.case_sens "Groß- und Kleinschreibung beachten">
+<!ENTITY chksend_set.ignore_quote "Zitierten Text ignorieren">
+<!ENTITY chksend_set.check_target "Suchen im:">
+<!ENTITY chksend_set.check_target_subject "Betreff">
+<!ENTITY chksend_set.check_target_body "Nachrichtentext">
+<!ENTITY chksend_set.check_attach_ext "Benachrichtigen, wenn Anhänge folgende Dateiendungen aufweisen:">
+<!ENTITY chksend_set.check_attach_ext_note "* Die Eingabe mehrerer Endungen mit '|' trennen">
+<!ENTITY chksend_set.check_attach_cap "Anhanggröße prüfen">
+<!ENTITY chksend_set.check_attach_size "Benachrichtigen, wenn die Dateigröße des Anhangs folgenden Wert überschreitet:">
+<!ENTITY chksend_set.check_attach_size_kb "KB.">
+<!ENTITY chksend_set.word_caption "Wörter prüfen">
+<!ENTITY chksend_set.check_word1 "Benachrichtigen, wenn in einer Nachricht folgende Wörter">
+<!ENTITY chksend_set.check_word2 "werden:">
+<!ENTITY chksend_set.check_word_menu1 "gefunden">
+<!ENTITY chksend_set.check_word_menu2 "nicht gefunden">
+<!ENTITY chksend_set.word_notice "* Die Eingabe mehrerer Wörter mit '|' trennen">
+<!ENTITY chksend_set.regexp_word "Als Suche nach regulären Ausdrücken interpretieren">
+<!ENTITY chksend_set.case_sens_word "Groß- und Kleinschreibung beachten">
+<!ENTITY chksend_set.ignore_quote_word "Zitierten Text ignorieren">
+<!ENTITY chksend_set.check_subject_word "Betreff ebenfalls prüfen">
+<!ENTITY chksend_set.recip_common_caption "Allgemein">
+<!ENTITY chksend_set.check_recip_type "Adressen folgender Empfängertypen überprüfen:">
+<!ENTITY chksend_set.check_recip_type_to "An">
+<!ENTITY chksend_set.check_recip_type_cc "CC">
+<!ENTITY chksend_set.check_recip_type_bcc "BCC">
+<!ENTITY chksend_set.check_recip_type_reply "Antwort an">
+<!ENTITY chksend_set.check_recip_type_news "Newsgruppe">
+<!ENTITY chksend_set.check_recip_type_follow "Followup an">
+<!ENTITY chksend_set.addr_check_with_word "Empfänger nur dann überprüfen, wenn es Fehler in der Anhang-/Wörterprüfung gibt">
+<!ENTITY chksend_set.show_addr_any "Alle Empfänger anzeigen">
+<!ENTITY chksend_set.senderinfo_caption "Absenderabhängige Empfängerprüfung">
+<!ENTITY chksend_set.senderinfo_confirm "Benachrichtigen, wenn sich die Domain des Empfängers von der des Absenders unterscheidet">
+<!ENTITY chksend_set.domain_level1 "Innerhalb der">
+<!ENTITY chksend_set.domain_level2 "ten-Level Domain suchen (für die gesamte Domain, '0' eingeben)">
+<!ENTITY chksend_set.addr_caption "Adressbuchabhängige Empfängerprüfung">
+<!ENTITY chksend_set.addr_confirm "Benachrichtigen, wenn Empfänger im Adressbuch">
+<!ENTITY chksend_set.addr_confirm_f "gefunden">
+<!ENTITY chksend_set.addr_confirm_nf "nicht gefunden">
+<!ENTITY chksend_set.addr_confirm2 "wurden.">
+<!ENTITY chksend_set.addr_addrbook "Suchen in:">
+<!ENTITY chksend_set.addr_search_domain "Domainabhängige Suche:">
+<!ENTITY chksend_set.addr_all_ab "Allen Adressbüchern">
+<!ENTITY chksend_set.rec_caption "Empfängernamen prüfen">
+<!ENTITY chksend_set.rec_corr "Empfängernamen automatisch verbessern, falls sie von einem Adressbucheintrag abweichen">
+<!ENTITY chksend_set.rec_rem "Empfängernamen entfernen">
+<!ENTITY chksend_set.rec_none "Nicht überprüfen">
+<!ENTITY chksend_set.rec_conf "Änderungen bei Empfängernamen vorher bestätigen">
+<!ENTITY chksend_set.rec_event "Empfänger prüfen:">
+<!ENTITY chksend_set.rec_event_open "Beim Öffnen des Verfassen-Fensters">
+<!ENTITY chksend_set.rec_event_send "Vor dem Senden einer Nachricht">
+<!ENTITY chksend_set.rec_event_both "In beiden Fällen">

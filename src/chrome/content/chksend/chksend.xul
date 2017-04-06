@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<overlay id="chksend_overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script type="application/x-javascript" src="chrome://global/content/nsUserSettings.js"/>
+  <script type="application/x-javascript" src="chrome://chksend/content/chksend.js"/>
+  
+  <stringbundleset id="stringbundleset">
+	<stringbundle id="CSBundle" src="chrome://chksend/locale/chksend.properties"/> 
+  </stringbundleset>
+  
+  <toolbox id="headers-box">
+	  <vbox insertbefore="MsgHeadersToolbar">
+		<notificationbox id="CASNotification" flex="1"/>
+	  </vbox>
+  </toolbox>
+</overlay>

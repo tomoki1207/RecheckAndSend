@@ -1,0 +1,73 @@
+<!ENTITY chksend_set.title "Impostazioni di Check and Send">
+<!ENTITY chksend_set.identity "Identità:">
+<!ENTITY chksend_set.default_identity "predefinita">
+<!ENTITY chksend_set.use_default "Utilizza identità predefinita">
+<!ENTITY chksend_set.use_default_note "Viene utilizzata l&apos;identità predefinita. Togliere il segno di spunta da &apos;Utilizza identità predefinita&apos; per impostare le opzioni per questa identità">
+<!ENTITY chksend_set.gentab "Generali">
+<!ENTITY chksend_set.attachtab "Allegati">
+<!ENTITY chksend_set.wordstab "Parole">
+<!ENTITY chksend_set.addrtab "Destinatari">
+<!ENTITY chksend_set.reciptab "Nomi dei destinatari">
+<!ENTITY chksend_set.confirm_caption "Conferma dell&apos;invio">
+<!ENTITY chksend_set.confirm_always "Chiedi sempre conferma prima di inviare un messaggio">
+<!ENTITY chksend_set.confirm_always_woerr "Chiedi conferma solo se non viene rilevato alcun errore">
+<!ENTITY chksend_set.blank_check_recip_type_caption "Conferma dei destinatari">
+<!ENTITY chksend_set.blank_check_recip_type "Selezionare per quali campi chiedere conferma se non sono presenti destinatari">
+<!ENTITY chksend_set.attach_caption "Controllo degli allegati">
+<!ENTITY chksend_set.check_attach1 "Chiedi conferma se nel messaggio privo di allegati">
+<!ENTITY chksend_set.check_attach2 "le parole sottostanti:">
+<!ENTITY chksend_set.check_attach_menu1 "appaiono">
+<!ENTITY chksend_set.check_attach_menu2 "non appaiono">
+<!ENTITY chksend_set.attach_notice "* Utilizzare | come separatore se si inseriscono molteplici parole">
+<!ENTITY chksend_set.regexp "Interpreta la richiesta come un&apos;espressione regolare">
+<!ENTITY chksend_set.case_sens "Controlla distinguendo maiuscole e minuscole">
+<!ENTITY chksend_set.ignore_quote "Ignora le occorrenze del testo nelle citazioni">
+<!ENTITY chksend_set.check_target "Cerca:">
+<!ENTITY chksend_set.check_target_subject "nell&apos;oggetto">
+<!ENTITY chksend_set.check_target_body "nel corpo del messaggio">
+<!ENTITY chksend_set.check_attach_ext "Chiedi conferma se gli allegati hanno le estensioni sottostanti:">
+<!ENTITY chksend_set.check_attach_ext_note "* Utilizzare | come separatore se si inseriscono molteplici estensioni">
+<!ENTITY chksend_set.check_attach_cap "Controllo della dimensione degli allegati">
+<!ENTITY chksend_set.check_attach_size "Chiedi conferma se la dimensione degli allegati eccede">
+<!ENTITY chksend_set.check_attach_size_kb "kB">
+<!ENTITY chksend_set.word_caption "Controllo delle parole">
+<!ENTITY chksend_set.check_word1 "Chiedi conferma se nel messaggio">
+<!ENTITY chksend_set.check_word2 "le parole sottostanti:">
+<!ENTITY chksend_set.check_word_menu1 "appaiono">
+<!ENTITY chksend_set.check_word_menu2 "non appaiono">
+<!ENTITY chksend_set.word_notice "* Utilizzare | come separatore se si inseriscono molteplici parole">
+<!ENTITY chksend_set.regexp_word "Interpreta la richiesta come un&apos;espressione regolare">
+<!ENTITY chksend_set.case_sens_word "Controlla distinguendo maiuscole e minuscole">
+<!ENTITY chksend_set.ignore_quote_word "Ignora le occorrenze del testo nelle citazioni">
+<!ENTITY chksend_set.check_subject_word "Controlla le occorrenze del testo anche nell&apos;oggetto del messaggio">
+<!ENTITY chksend_set.recip_common_caption "Identità predefinita">
+<!ENTITY chksend_set.check_recip_type "Selezionare per quali campi controllare gli indirizzi e-mail dei destinatari">
+<!ENTITY chksend_set.check_recip_type_to "A:">
+<!ENTITY chksend_set.check_recip_type_cc "Cc:">
+<!ENTITY chksend_set.check_recip_type_bcc "Ccn:">
+<!ENTITY chksend_set.check_recip_type_reply "Rispondi a:">
+<!ENTITY chksend_set.check_recip_type_news "Gruppo discussione:">
+<!ENTITY chksend_set.check_recip_type_follow "Seguito a:">
+<!ENTITY chksend_set.addr_check_with_word "Controlla solo se si verificano errori durante il controllo di allegati/parole">
+<!ENTITY chksend_set.show_addr_any "Visualizza un pop-up per tutti i destinatari">
+<!ENTITY chksend_set.senderinfo_caption "Controllo dei destinatari tramite informazioni del mittente">
+<!ENTITY chksend_set.senderinfo_confirm "Chiedi conferma se il dominio dei destinatari è differente rispetto a quello del mittente">
+<!ENTITY chksend_set.domain_level1 "Sottodominii entro i quali cercare:">
+<!ENTITY chksend_set.domain_level2 " (inserire 0 per l&apos;intero dominio)">
+<!ENTITY chksend_set.addr_caption "Controllo dei destinatari tramite rubrica">
+<!ENTITY chksend_set.addr_confirm "Chiedi conferma se i destinatari">
+<!ENTITY chksend_set.addr_confirm_f "sono stati trovati">
+<!ENTITY chksend_set.addr_confirm_nf "non sono stati trovati">
+<!ENTITY chksend_set.addr_confirm2 "nella rubrica">
+<!ENTITY chksend_set.addr_addrbook "Cerca in:">
+<!ENTITY chksend_set.addr_search_domain "Cerca per dominio">
+<!ENTITY chksend_set.addr_all_ab "tutte le rubriche">
+<!ENTITY chksend_set.rec_caption "Controllo dei nomi dei destinatari">
+<!ENTITY chksend_set.rec_corr "Correggi i nomi dei destinatari se differenti rispetto a quelli presenti nella rubrica">
+<!ENTITY chksend_set.rec_rem "Elimina i nomi dei destinatari">
+<!ENTITY chksend_set.rec_none "Non fare nulla">
+<!ENTITY chksend_set.rec_conf "Chiedi conferma prima di correggere">
+<!ENTITY chksend_set.rec_event "Check recipients:">
+<!ENTITY chksend_set.rec_event_open "Effettua il controllo dei nomi dei destinatari all&apos;apertura della finestra di composizione messaggio">
+<!ENTITY chksend_set.rec_event_send "Effettua il controllo dei nomi dei destinatari prima dell&apos;invio di un messaggio">
+<!ENTITY chksend_set.rec_event_both "Effettua il controllo dei nomi dei destinatari in entrambi i casi">

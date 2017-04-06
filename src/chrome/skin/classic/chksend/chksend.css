@@ -1,0 +1,8 @@
+textbox[cas_highlighted="red"]{
+  color: red !important;
+}
+textbox[cas_highlighted="blue"]{
+  color: blue !important;
+}
+textbox[cas_highlighted="none"]{
+}
